@@ -1,0 +1,240 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Container para os botões */
+#button-container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que os botões se ajustem à largura disponível */
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os botões */
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    flex: 1 1 150px; /* Ajusta para ocupar espaço disponível */
+    max-width: 200px; /* Limita a largura máxima para os botões */
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Impede quebra de texto */
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Estilo para a To-Do List */
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Container da lista de tarefas */
+#task-container {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+li.completed {
+    background-color: #4CAF50;
+    text-decoration: line-through;
+}
+
+li:hover {
+    background-color: #444;
+}
+
+button {
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6666;
+}
+
+/* Estilo para o campo de entrada e botão de adicionar */
+#task-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+#add-task-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px; /* Limita a largura máxima para que os botões não fiquem muito grandes */
+    margin: 10px auto;
+}
+
+#add-task-btn:hover {
+    background-color: #006f8e;
+}
+
+/* Estilo para o calendário */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#calendar div {
+    padding: 10px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calendar div:hover {
+    background-color: #444;
+}
+
+/* Estilo para o campo de anotações do calendário */
+#calendar-note-input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#add-calendar-note-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+#add-calendar-note-btn:hover {
+    background-color: #006f8e;
+}
+
+/* Estilo para as anotações do calendário */
+#calendar-notes-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#calendar-notes-list li {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#calendar-notes-list li:hover {
+    background-color: #444;
+}
+
+#calendar-notes-list li .remove-note {
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calendar-notes-list li .remove-note:hover {
+    background-color: #ff6666;
+}
+
+/* Ajustes específicos para os botões de adicionar */
+#add-task-btn,
+#add-calendar-note-btn {
+    width: 100%;  /* Faz os botões ocuparem a largura total disponível */
+    max-width: 14%; /* Limita o tamanho máximo para que os botões não fiquem muito grandes */
+    margin: 10px auto;
+}
+
+#add-task-btn:hover,
+#add-calendar-note-btn:hover {
+    background-color: #006f8e;
+}
+
+/* Ajuste no contêiner de botões */
+#task-container,
+#calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Ajuste no contêiner de botões de adicionar */
+#add-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#add-container button {
+    flex: 1 1 150px; /* Faz com que os botões ocupem um mínimo de 150px, mas podem se expandir */
+    max-width: 300px; /* Limita a largura máxima dos botões */
+}

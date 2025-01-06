@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dash Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Título Grande no Topo -->
+    <h1 class="main-title">My Dash Board</h1>
+
+    <h2>My Favorite Links</h2>
+
+    <div class="container" id="button-container">
+        <!-- Botões com Links serão inseridos aqui automaticamente -->
+    </div>
+
+    <!-- Seção da To-Do List -->
+    <div class="todo-container">
+        <h2>My To-Do List</h2>
+        <input type="text" id="task-input" placeholder="Adicionar nova tarefa..." />
+        <button id="add-task-btn">Add</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Seção do Calendário -->
+    <div class="calendar-container">
+        <h2>My Calendar</h2>
+        <div id="calendar"></div>
+        <div id="date-info">
+            <input type="text" id="calendar-note-input" placeholder="Digite sua anotação..." />
+            <button id="add-calendar-note-btn">Add</button>
+            <ul id="calendar-notes-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

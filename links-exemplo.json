@@ -1,0 +1,14 @@
+//para poder utilizar preencha os campos e renomeie o arquivo para links.json
+//caso contrário os botões não aparecerão no site (também apague essas linhas de comentário)
+{
+    "links": [
+        {"text": "Link 1", "url": "https://www.exemplo1.com"},
+        {"text": "Link 2", "url": "https://www.exemplo2.com"},
+        {"text": "Link 3", "url": "https://www.exemplo3.com"},
+        {"text": "Link 4", "url": "https://www.exemplo4.com"},
+        {"text": "Link 5", "url": "https://www.exemplo5.com"},
+        {"text": "Link 6", "url": "https://www.exemplo6.com"},
+        {"text": "Link 7", "url": "https://www.exemplo7.com"},
+        {"text": "Link 8", "url": "https://www.exemplo8.com"}
+    ]
+}
